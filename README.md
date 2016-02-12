@@ -13,7 +13,7 @@ $ npm install sails-generate-gulp
 
 ## .sailsrc
 
-A .sailsrc file needs to be added to the working dir with the following:
+A .sailsrc file needs to be added to the working directory with the following:
 
 ```json
 {
@@ -25,3 +25,15 @@ A .sailsrc file needs to be added to the working dir with the following:
     }
 }
 ```
+
+## Usage
+
+```sh
+sails new <project name>
+```
+
+## License
+
+The sails-generate-gulp module is released under the ICS license.
+
+https://github.com/groupe-sii/sails-generate-gulp/blob/master/LICENSE
