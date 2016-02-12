@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-gulp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Generate a new Sails.js application using Gulp instead of Grunt.",
   "main": "lib/index.js",
   "scripts": {
