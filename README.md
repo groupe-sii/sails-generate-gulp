@@ -25,4 +25,3 @@ A .sailsrc file needs to be added to the working dir with the following:
     }
 }
 ```
-
