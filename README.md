@@ -10,7 +10,7 @@ First, you will need to generate a sails application.
 
 ```sh
 $ npm i sails -g
-$ sails new <project-name> # Stop the automatic `npm install` command before it install sails depencies and gulp with it
+$ sails new <project-name> # Stop the automatic `npm install` command before it installs sails dependencies and gulp with it
 $ cd <project-name>
 ```
 
