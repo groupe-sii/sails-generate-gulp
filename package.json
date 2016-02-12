@@ -16,7 +16,8 @@
   "author": "Valentin GOT",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.3.0"
+    "lodash": "^4.3.0",
+    "rimraf": "^2.5.1"
   },
   "devDependencies": {
     "sails-generate": "*",
