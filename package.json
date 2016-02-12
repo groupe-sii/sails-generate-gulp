@@ -1,0 +1,31 @@
+{
+  "name": "sails-generate-gulp",
+  "version": "0.0.1",
+  "description": "Generate a new Sails.js application using Gulp instead of Grunt.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "gulp",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "Valentin GOT",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.3.0"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "*"
+  },
+  "sailsGenerator": {
+    "type": "gulp",
+    "behavior": "overrides `sails generate gulp`",
+    "sailsVersion": "~0.12.0"
+  }
+}
