@@ -38,7 +38,7 @@ With [sails-generate-override-new](https://github.com/groupe-sii/sails-generate-
 {
     "generators": {
         "modules": {
-            "gulp": "sails-generate-override-new",
+            "new": "sails-generate-override-new",
             "gulp": "sails-generate-gulp",
         }
     }
