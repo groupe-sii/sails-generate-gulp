@@ -2,7 +2,7 @@
 
 # sails-generate-gulp
 
-A gulp generator for Sails.js to replace default Grunt tasks.
+A Gulp generator for Sails.js to replace default Grunt tasks.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ First, you will need to generate a sails application.
 
 ```sh
 $ npm i sails -g
-$ sails new <project-name> # Stop the automatic `npm install` command before it installs sails dependencies and gulp with it
+$ sails new <project-name> # Please stop the automatic `npm install` command before it installs sails dependencies and Grunt with it
 $ cd <project-name>
 ```
 
