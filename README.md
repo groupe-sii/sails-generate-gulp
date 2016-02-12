@@ -4,21 +4,23 @@
 
 A gulp generator for Sails.js to replace default Grunt tasks.
 
+## Prerequisites
+
+First, you will need to generate a sails application.
+
+```sh
+$ npm i sails -g
+$ sails new <project-name>
+$ cd <project-name>
+```
+
 ## Installation
 
 ```sh
 $ npm install sails-generate-gulp
 ```
 
-It can be used in combination with [sails-generate-override-new](https://github.com/groupe-sii/sails-generate-override-new) to automatically generate gulp tasks at sails project creation:
-
-```sh
-$ npm install sails-generate-gulp
-```
-
-If not, you will just create the Gulp tasks and they wont replace the default Grunt tasks.
-
-## .sailsrc
+## How to use ?
 
 A .sailsrc file needs to be added to the working directory with the following:
 
@@ -32,36 +34,24 @@ A .sailsrc file needs to be added to the working directory with the following:
 }
 ```
 
-With [sails-generate-override-new](https://github.com/groupe-sii/sails-generate-override-new) :
-
-```json
-{
-    "generators": {
-        "modules": {
-            "new": "sails-generate-override-new",
-            "gulp": "sails-generate-gulp",
-        }
-    }
-}
-```
-
-## Usage
-
-### Default
-
-It will just create the **/tasks** folder
+Then launch:
 
 ```sh
-sails generate gulp
+$ sails generate gulp
 ```
 
-### With sails-generate-new
+## What is it doing ?
 
-It will also remove the default Grunt tasks and launch the Gulp ones at sails lift.
+It Will:
 
-```sh
-sails new <project name>
-```
+* Remove the `Gruntfile.js`
+* Remove all Grunt tasks under `tasks/` folder
+* Create the `gulpfile.js` to manage Gulp tasks
+* Create a whole new `tasks/` folder with Gulp tasks
+* Update `.sailsrc` to disable grunt
+* Update `package.json` to remove old grunt dependencies
+* Update `package.json` to add gulp dependencies
+* Create a default SASS architecture under `/assets/styles`
 
 ## License
 
