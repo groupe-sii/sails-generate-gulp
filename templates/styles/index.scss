@@ -1,0 +1,44 @@
+//-------------------------------------------------------------------
+//  A default SASS architecture following the 7-1 pattern:
+//    - 7 folders
+//    - 1 file to merge them all ;)
+//
+//  More information about this architecture over here:
+//  http://sass-guidelin.es/#architecture
+//-------------------------------------------------------------------
+
+// Utils
+//@import 'utils/variables';
+//@import 'utils/functions';
+//@import 'utils/mixins';
+//@import 'utils/placeholders';
+
+// Vendors
+//@import 'vendors/bootstrap';
+//@import 'vendors/jquery-ui';
+
+// Base
+//@import 'base/reset';
+//@import 'base/typography';
+
+// Layout
+//@import 'layout/navigation';
+//@import 'layout/grid';
+//@import 'layout/header';
+//@import 'layout/footer';
+//@import 'layout/sidebar';
+//@import 'layout/forms';
+
+// Components
+//@import 'components/buttons';
+//@import 'components/carousel';
+//@import 'components/cover';
+//@import 'components/dropdown';
+
+// Pages
+//@import 'pages/home';
+//@import 'pages/contact';
+
+// Themes
+//@import 'themes/theme';
+//@import 'themes/admin';
