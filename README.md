@@ -38,6 +38,7 @@ Then launch:
 
 ```sh
 $ sails generate gulp
+$ npm install # To install newly added dependencies
 ```
 
 ## What is it doing ?
