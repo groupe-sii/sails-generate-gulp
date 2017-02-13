@@ -51,7 +51,7 @@ module.exports = function(gulp, plugins, growl) {
   gulp.task('sails-linker-gulp:devViews', function() {
 
     // Read templates
-    return gulp.src(['views/**/*.html', 'views/**/*.handlebars'])
+    return gulp.src(['views/**/*.html', 'views/**/*.handlebars', 'views/**/*.ejs'])
 
       // Link the javaScript
       .pipe(plugins.linker({
@@ -120,7 +120,7 @@ module.exports = function(gulp, plugins, growl) {
   // Insert relative JS, CSS and template dev links into HTML and HANDLEBARS files in the views folder
   gulp.task('sails-linker-gulp:devViewsRelative', function() {
     // Read templates
-    return gulp.src(['views/**/*.html', 'views/**/*.handlebars'])
+    return gulp.src(['views/**/*.html', 'views/**/*.handlebars', 'views/**/*.ejs'])
       // Link the javaScript
       .pipe(plugins.linker({
         scripts: [require('../pipeline').jsFilesToInject],
@@ -187,7 +187,7 @@ module.exports = function(gulp, plugins, growl) {
   // Insert JS, CSS and template production links into HTML and HANDLEBARS files in the views folder
   gulp.task('sails-linker-gulp:prodViews', function() {
     // Read templates
-    return gulp.src(['views/**/*.html', 'views/**/*.handlebars'])
+    return gulp.src(['views/**/*.html', 'views/**/*.handlebars', 'views/**/*.ejs'])
       // Link the JavaScript
       .pipe(plugins.linker({
         scripts: ['.tmp/public/concat/production.min.js'],
@@ -254,7 +254,7 @@ module.exports = function(gulp, plugins, growl) {
   // Insert relative JS, CSS and template production links into HTML and HANDLEBARS files in the views folder
   gulp.task('sails-linker-gulp:prodViewsRelative', function() {
     // Read templates
-    return gulp.src(['views/**/*.html', 'views/**/*.handlebars'])
+    return gulp.src(['views/**/*.html', 'views/**/*.handlebars', 'views/**/*.ejs'])
       // Link the JavaScript
       .pipe(plugins.linker({
         scripts: ['.tmp/public/concat/production.min.js'],
