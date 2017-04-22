@@ -28,7 +28,7 @@ A .sailsrc file needs to be added to the working directory with the following:
 {
     "generators": {
         "modules": {
-            "gulp": "sails-generate-gulp",
+            "gulp": "sails-generate-gulp"
         }
     }
 }
